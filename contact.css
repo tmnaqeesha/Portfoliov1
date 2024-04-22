@@ -1,0 +1,63 @@
+.pic{
+    height: 300px;
+    position: fixed;
+    top: 165px;
+    left: 230px;
+    transition: transform 1.55s;
+}
+.pic:hover{
+    transform: translateY(-10px);
+}
+.text1{
+    position: fixed;
+    font-size: 22px;
+    top: 500px;
+    left: 272px;
+    letter-spacing: 2px;
+}
+.text2{
+    position: fixed;
+    font-size: 18px;
+    font-weight: 600px;
+    top: 535px;
+    left: 338px;
+    letter-spacing: 2px;
+}
+.text3{
+    position: fixed;
+    font-size: 16px;
+    font-weight: 500px;
+    top: 565px;
+    left: 287px;
+    letter-spacing: 1px;
+}
+.exp{
+    position: fixed;
+    font-size: 18px;
+    font-weight: 500px;
+    top: 265px;
+    left: 587px;
+    letter-spacing: 1.5px;
+}
+.btn {
+  z-index: 9999;
+    background: none;
+    color: palevioletred;
+    font-size: 23px;
+    font-weight: 800;
+    width: 310px;
+    height: 52px;
+    border: 2pxpx solid white;
+    border-radius: 20px;
+    transition: .4s linear;
+    position: relative;
+    top: 150px;
+    left: 350px;
+}
+.btn:hover{
+    color: rebeccapurple;
+    cursor: pointer;
+    background: white;
+    transition: 1s;
+    transform: translateY(-8px);
+}

@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 0;
+    background-image: url("https://wallpaperaccess.com/full/729335.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+header{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+header .logo{
+    color: mediumpurple;
+    font-size: 19px;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .menu a{
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: 0.18s;
+    transition-property: color, background;
+    position: sticky;
+}
+header .menu a:hover{
+    color: skyblue;
+    background: white;
+}
+#background{
+    position: fixed;
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    align-items: center;
+}
+.bonjour{
+    z-index: 999;
+    position: relative;
+    top: 100px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.wrapper{
+    box-sizing: content-box;
+    color: black;
+    height: 100px;
+    padding: 90px 80px;
+    display: flex;
+    border-radius: 20px;
+    z-index: 999;
+    font-size: 70px;
+    font-weight: 900;
+    position: fixed;
+}
+.words{
+    overflow: hidden;
+}
+span{
+    display: block;
+    height: 120%;
+    padding-left: 30px;
+    animation: spin_words 10s infinite;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300);
+    }
+    85%{
+        transform: translateY(-312%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+.caption{
+    z-index: 9999;
+    font-size: 20px;
+    font-weight: 500;
+    position: fixed;
+    top: 448px;
+    color: black;
+    letter-spacing: 2px;
+}
+.btn{
+    z-index: 9999;
+    background: none;
+    color: palevioletred;
+    font-size: 23px;
+    font-weight: 800;
+    width: 180px;
+    height: 55px;
+    border: 2pxpx solid white;
+    border-radius: 20px;
+    transition: .4s linear;
+    position: fixed;
+    top: 500px;
+    left: 680px;
+}
+.btn:hover{
+    color: rebeccapurple;
+    background: white;
+    transition: 1s;
+}
+.skills img{
+    position: fixed;
+    left: 1120px;
+}
+.travel img{
+    width: 470px;
+    height: 470px;
+    position: fixed;
+    top: 300px;
+    left: 840px;
+}
+.food img{
+    width: 310px;
+    height: 310px;
+    position: fixed;
+    top: 47px;
+    left: 1225px;
+}
+.independance img{
+    width: 690px;
+    height: 130px;
+    position: fixed;
+    top: 270px;
+    left: 750px;
+}
+.fluidite img{
+    width: 340px;
+    height: 125px;
+    position: fixed;
+    top: 100px;
+    left: 1100px;
+}
+.decouverte img{
+    width: 550px;
+    height: 130px;
+    position: fixed;
+    top: 480px;
+    left: 1000px;
+}
+.culture1 img{
+    width: 400px;
+    height: 120px;
+    position: fixed;
+    top: 240px;
+    left: 1090px;
+}
+.culture2 img{
+    width: 590px;
+    height: 120px;
+    position: fixed;
+    top: 295px;
+    left: 985px;
+}
+.curious img{
+    width: 300px;
+    height: 110px;
+    position: fixed;
+    top: 70px;
+    left: 890px;
+}
+.enthu img{
+    width: 500px;
+    height: 120px;
+    position: fixed;
+    top: 500px;
+    left: 800px;
+}
+.textfood{
+    z-index: 9999;
+}
+.web img{
+    width: 430px;
+    position: fixed;
+    top: 500px;
+    left: 1050px;
+}
+img:hover{
+    transform: translateY(-10px);
+}
+.ard img{
+    width: 230px;
+    position: fixed;
+    top: 100px;
+    left: 1150px;
+}
+.fluidite-t{
+    z-index: 99999;
+    position: fixed;
+    font-weight: 600;
+    top: 195px;
+    width: 450px;
+    left: 1044px;
+    color: #DDFFEE;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    text-align: center;
+}
+.independance-t{
+    z-index: 99999;
+    position: fixed;
+    font-weight: 600;
+    top: 387px;
+    width: 600px;
+    left: 805px;
+    color: #DDFFEE;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    text-align: center;
+}
+.decouverte-t{
+    z-index: 99999;
+    position: fixed;
+    font-weight: 600;
+    top: 580px;
+    width: 520px;
+    left: 1023px;
+    color: #DDFFEE;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    text-align: center;
+}
+.curious-t{
+    z-index: 99999;
+    position: fixed;
+    font-weight: 600;
+    top: 155px;
+    width: 450px;
+    left: 814px;
+    color: saddlebrown;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    text-align: center;
+}
+.culture-t{
+    z-index: 99999;
+    position: fixed;
+    font-weight: 600;
+    top: 388px;
+    width: 545px;
+    left: 1005px;
+    color: saddlebrown;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    text-align: center;
+}
+.enthu-t{
+    z-index: 99999;
+    position: fixed;
+    font-weight: 600;
+    top: 592px;
+    width: 520px;
+    left: 798px;
+    color: saddlebrown;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    text-align: center;
+}
+.travel-t{
+    z-index: 99999;
+    position: fixed;
+    font-weight: 600;
+    top: 500px;
+    width: 320px;
+    left: 1220px;
+    color: rebeccapurple;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    text-align: center;
+}
+.food-t{
+    z-index: 99999;
+    position: fixed;
+    font-weight: 600;
+    top: 180px;
+    width: 280px;
+    left: 980px;
+    color: rebeccapurple;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    text-align: center;
+}
+.random{
+    z-index: 99999;
+    background: white;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 600;
+    top: 440px;
+    width: 380px;
+    left: 1080px;
+    color: mediumvioletred;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    text-align: center;
+    transition: width 4s;
+}
